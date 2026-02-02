@@ -1,0 +1,10 @@
+node_modules
+.envrc
+.idea
+.angular
+.DS_Store
+angular.json
+dist
+server.log
+npmInstall.log
+compile.log
