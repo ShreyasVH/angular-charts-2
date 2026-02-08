@@ -5,5 +5,9 @@
         <a href="?type=doughnut">Doughnut Chart</a>
     </div>
     <app-bar-chart *ngIf="type === 'bar'" />
-    <app-doughnut-chart *ngIf="type === 'doughnut'" />
+    <div *ngIf="type === 'doughnut'">
+        <app-doughnut-chart [data]="dataDoughnut1" />
+        <app-doughnut-chart [data]="dataDoughnut2" />
+    </div>
+
 </div>
