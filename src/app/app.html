@@ -1,3 +1,9 @@
 <div>
-    <app-bar-chart />
+    <div style="margin-bottom: 30px">
+        <a href="?type=bar">Bar Chart</a>
+        &nbsp;
+        <a href="?type=doughnut">Doughnut Chart</a>
+    </div>
+    <app-bar-chart *ngIf="type === 'bar'" />
+    <app-doughnut-chart *ngIf="type === 'doughnut'" />
 </div>
